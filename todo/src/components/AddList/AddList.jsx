@@ -5,7 +5,7 @@ export default function AddList({ onAdd }) {
   const handleChange = (e) => setText(e.target.value);
   const handleSubmit = (e) => {
     e.preventDefault();
-    onAdd({ id: '1', text });
+    onAdd({ id: Date.now(), text });
     setText('');
   };
   return (
