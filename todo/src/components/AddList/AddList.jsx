@@ -8,6 +8,7 @@ export default function AddList({ onAdd }) {
     onAdd({ id: Date.now(), text });
     setText('');
   };
+
   return (
     <form onSubmit={handleSubmit}>
       <input type="text" placeholder="할일을 입력하세요." value={text} onChange={handleChange}></input>
